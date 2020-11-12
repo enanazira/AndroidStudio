@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "692796237285",
+    "firebase_url": "https://parduspoint-fb934.firebaseio.com",
+    "project_id": "parduspoint-fb934",
+    "storage_bucket": "parduspoint-fb934.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692796237285:android:5e8964bdd21450b83e3b0c",
+        "android_client_info": {
+          "package_name": "com.example.parduspoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692796237285-m74ekcrq98j8li09p0peqpul3ai21at7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parduspoint",
+            "certificate_hash": "d4b5f9ff8f760b964605a5a83af19cdccc289b18"
+          }
+        },
+        {
+          "client_id": "692796237285-qu8jhee0s19ro8dlck926h3et9n13o6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4c2Ih6qYS5dkxXFr8rzUFRmFCqaqZcSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692796237285-qu8jhee0s19ro8dlck926h3et9n13o6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

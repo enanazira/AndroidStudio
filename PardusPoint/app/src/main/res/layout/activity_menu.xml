@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".menu"
+    tools:layout_editor_absoluteY="25dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFEFE"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingRight="8dp"
+        android:theme="?attr/actionBarTheme"
+        app:buttonGravity="top"
+        app:collapseIcon="@drawable/ic_menu_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Pardus Point"
+        app:titleMarginStart="140dp"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:titleTextColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/background3" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:background="#009163E7"
+        android:foregroundGravity="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Kolej Ungku Omar"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto_slab" />
+
+        <TextView
+            android:id="@+id/tv_matric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="A168219"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:fontFamily="@font/roboto_mono" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtn_call"
+        android:layout_width="103dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn_organization"
+        app:layout_constraintTop_toTopOf="@+id/imgBtn_organization"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_profile"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtn_activity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imgBtn_map"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/ic_activity" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_activity"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:background="#00FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtn_totalMerit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn_profile"
+        app:layout_constraintTop_toTopOf="@+id/imgBtn_profile"
+        app:srcCompat="@drawable/ic_total" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_totalMerit"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:background="#00FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtn_call"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn_activity"
+        app:layout_constraintTop_toTopOf="@+id/imgBtn_activity"
+        app:srcCompat="@drawable/ic_total_merit"
+        tools:srcCompat="@drawable/ic_total_merit" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_organization"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:background="#00FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtn_call"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn_map"
+        app:layout_constraintTop_toTopOf="@+id/imgBtn_map"
+        app:srcCompat="@drawable/ic_organization" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_map"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:foregroundGravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtn_organization"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile"
+        app:srcCompat="@drawable/ic_map" />
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Profil"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtn_profile"
+        app:layout_constraintStart_toStartOf="@+id/imgBtn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_profile" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Jumlah Merit"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtn_totalMerit"
+        app:layout_constraintStart_toStartOf="@+id/imgBtn_totalMerit"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_totalMerit" />
+
+    <TextView
+        android:id="@+id/tv_aktiviti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Aktiviti"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtn_activity"
+        app:layout_constraintStart_toStartOf="@+id/imgBtn_activity"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_activity" />
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Nombor Kecemasan"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_organisasi"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtn_call"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn_organization"
+        app:layout_constraintTop_toTopOf="@+id/tv_organisasi" />
+
+    <TextView
+        android:id="@+id/tv_organisasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organisasi"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtn_organization"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn_map"
+        app:layout_constraintTop_toTopOf="@+id/tv_map" />
+
+    <TextView
+        android:id="@+id/tv_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Peta KUO"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtn_map"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/imgBtn_map"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_map" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

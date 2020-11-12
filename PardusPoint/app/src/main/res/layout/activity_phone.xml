@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone">
+
+    <ImageView
+        android:id="@+id/img_felo1"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kak_ekin" />
+
+    <ImageView
+        android:id="@+id/img_felo2"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_felo1"
+        app:srcCompat="@drawable/kak_fanie" />
+
+    <TextView
+        android:id="@+id/txt_felo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:fontFamily="roboto"
+        android:inputType="textPersonName"
+        android:text="CIK SITI FARHANNIE"
+        android:textSize="12sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/img_felo2"
+        app:layout_constraintTop_toBottomOf="@+id/phone_felo1" />
+
+    <ImageView
+        android:id="@+id/img_felo3"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_felo2"
+        app:srcCompat="@drawable/kak_timah" />
+
+    <TextView
+        android:id="@+id/txt_felo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:fontFamily="roboto"
+        android:inputType="textPersonName"
+        android:text="CIK SITI FATIMAH"
+        android:textSize="12sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/img_felo3"
+        app:layout_constraintTop_toBottomOf="@+id/phone_felo2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_felo3"
+        app:srcCompat="@drawable/abg_zain" />
+
+    <TextView
+        android:id="@+id/txt_felo4"
+        android:layout_width="157dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:fontFamily="roboto"
+        android:inputType="textPersonName"
+        android:text="EN. AHMAD RUZAINI"
+        android:textSize="12sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/phone_felo3" />
+
+    <TextView
+        android:id="@+id/txt_felo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="roboto"
+        android:text="CIK NORASHIKIN HAMZAH (Felo Kanan)"
+        android:textSize="12sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/img_felo1"
+        app:layout_constraintTop_toTopOf="@+id/img_felo1" />
+
+    <TextView
+        android:id="@+id/phone_felo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="011-2345343"
+        app:layout_constraintBottom_toBottomOf="@+id/img_felo1"
+        app:layout_constraintStart_toStartOf="@+id/txt_felo1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_felo1" />
+
+    <TextView
+        android:id="@+id/phone_felo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="019-2626142"
+        app:layout_constraintBottom_toBottomOf="@+id/img_felo2"
+        app:layout_constraintStart_toStartOf="@+id/txt_felo2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_felo2" />
+
+    <TextView
+        android:id="@+id/phone_felo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="012-9198250"
+        app:layout_constraintBottom_toBottomOf="@+id/img_felo3"
+        app:layout_constraintStart_toStartOf="@+id/txt_felo3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_felo3" />
+
+    <TextView
+        android:id="@+id/phone_felo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="017-3192735"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/txt_felo4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_felo4" />
+
+    <ImageButton
+        android:id="@+id/img_ws_1"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_felo1"
+        app:layout_constraintStart_toEndOf="@+id/phone_felo1"
+        app:layout_constraintTop_toTopOf="@+id/phone_felo1"
+        app:srcCompat="@drawable/whatsapp_logo" />
+
+    <ImageButton
+        android:id="@+id/img_ws_2"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_felo2"
+        app:layout_constraintStart_toEndOf="@+id/phone_felo2"
+        app:layout_constraintTop_toTopOf="@+id/phone_felo2"
+        app:srcCompat="@drawable/whatsapp_logo" />
+
+    <ImageButton
+        android:id="@+id/img_ws_3"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_felo3"
+        app:layout_constraintStart_toEndOf="@+id/phone_felo3"
+        app:layout_constraintTop_toTopOf="@+id/phone_felo3"
+        app:srcCompat="@drawable/whatsapp_logo" />
+
+    <ImageButton
+        android:id="@+id/img_ws_4"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_felo4"
+        app:layout_constraintStart_toEndOf="@+id/phone_felo4"
+        app:layout_constraintTop_toTopOf="@+id/phone_felo4"
+        app:srcCompat="@drawable/whatsapp_logo" />
+
+    <ImageButton
+        android:id="@+id/img_call_4"
+        android:layout_width="41dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_ws_4"
+        app:layout_constraintStart_toEndOf="@+id/img_ws_4"
+        app:layout_constraintTop_toTopOf="@+id/img_ws_4"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/img_call_3"
+        android:layout_width="41dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_ws_3"
+        app:layout_constraintStart_toEndOf="@+id/img_ws_3"
+        app:layout_constraintTop_toTopOf="@+id/img_ws_3"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/img_call_2"
+        android:layout_width="41dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_ws_2"
+        app:layout_constraintStart_toEndOf="@+id/img_ws_2"
+        app:layout_constraintTop_toTopOf="@+id/img_ws_2"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/img_call_1"
+        android:layout_width="41dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_ws_1"
+        app:layout_constraintStart_toEndOf="@+id/img_ws_1"
+        app:layout_constraintTop_toTopOf="@+id/img_ws_1"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
